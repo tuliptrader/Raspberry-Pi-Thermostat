@@ -1,6 +1,5 @@
 # Import the MPU6050 class from the MPU6050.py file
 from MPU6050 import MPU6050
-from .max31855.max6675 import MAX6675
 import glob, datetime, os
 import time
 
