@@ -1,5 +1,5 @@
-from .max31855.max6675 import MAX6675, MAX6675Error
-from time import sleep
+from max31855.max6675 import MAX6675, MAX6675Error
+
 from datetime import datetime
 
 cs_pin = 24
