@@ -7,7 +7,7 @@ clock_pin = 23
 data_pin = 22
 units = "c"
 
-log_interval = 5
+log_interval = 3
 
 while True:
     datafile = open("temperature_data_py.csv", "a")
@@ -17,7 +17,7 @@ while True:
     info_now = str(datetime.now()) + "; " + str(thermocouple.get()) + "\n"
     datafile.write(info_now)
 
-    print(info_now)
+    print(str(datetime.now()) + "; " + str(thermocouple.get()))
     datafile.close()
     thermocouple.cleanup()
     sleep(log_interval)
