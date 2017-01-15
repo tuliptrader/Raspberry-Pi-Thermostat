@@ -4,7 +4,7 @@
 
 def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, False)
 	# We will just loop round switching the units on and off
-	if socket = 1:
+	if socket == 1:
         if state == True:
             # Set K0-K3
             #print "sending code 1111 socket 1 on"
@@ -37,7 +37,7 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             # Disable the modulator
             GPIO.output (22, False)
 
-    if socket = 2:
+    if socket == 2:
         if state == True:
             # Set K0-K3
             #print "sending code 1110 socket 2 on"
@@ -69,7 +69,7 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             time.sleep(0.25)
             # Disable the modulator
             GPIO.output (22, False)
-    if socket = 3:
+    if socket == 3:
 		if state == True:
             # Set K0-K3
             #print "sending code 1101 socket 3 on"
@@ -102,7 +102,7 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             # Disable the modulator
             GPIO.output (22, False)
 
-	if socket = 4:
+	if socket == 4:
         if state == True:
             # Set K0-K3
             #print "sending code 1100 socket 4 on"
@@ -135,7 +135,7 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             # Disable the modulator
             GPIO.output (22, False)
 
-    if socket = all:
+    if socket == all:
         if state == True:
 		# Set K0-K3
             #print "sending code 1011 ALL on"
