@@ -2,7 +2,7 @@
 
 #import the required modules
 import RPi.GPIO as GPIO
-from time import sleep
+import time
 
 # set the pins numbering mode
 GPIO.setmode(GPIO.BOARD)
@@ -46,7 +46,7 @@ while True:
     # Disable the modulator
     GPIO.output(22, False)
 
-    sleep(5)
+    time.sleep(5)
 
     GPIO.output(11, True)
     GPIO.output(15, True)
@@ -61,4 +61,4 @@ while True:
     # Disable the modulator
     GPIO.output(22, False)
 
-    sleep(5)
+    time.sleep(5)
