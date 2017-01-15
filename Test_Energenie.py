@@ -2,7 +2,7 @@
 
 #import the required modules
 import RPi.GPIO as GPIO
-import time
+from time import sleep
 
 # set the pins numbering mode
 GPIO.setmode(GPIO.BOARD)
