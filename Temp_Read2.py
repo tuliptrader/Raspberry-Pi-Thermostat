@@ -11,3 +11,4 @@
 Temperature_Data = open("/sys/bus/w1/devices/28-0416606a3cff/w1_slave","r")
 
 print str(Temperature_Data)
+print Temperature_Data
