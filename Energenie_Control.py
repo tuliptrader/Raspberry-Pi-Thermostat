@@ -99,10 +99,9 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             time.sleep(0.25)
             # Disable the modulator
             GPIO.output (22, False)
+
     elif socket == 3:
-		if state == True:
-            # Set K0-K3
-            #print "sending code 1101 socket 3 on"
+    	if state is True:
             GPIO.output (11, True)
             GPIO.output (15, False)
             GPIO.output (16, True)
@@ -113,10 +112,9 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             GPIO.output (22, True)
             # keep enabled for a period
             time.sleep(0.25)
-            # Disable the modulator
-            GPIO.output (22, False)
+            GPIO.output(22, False)
 
-		elif state == False:
+        elif state == False:
             # Set K0-K3
             #print "sending code 0101 socket 3 off"
             GPIO.output (11, True)

@@ -25,10 +25,10 @@ GPIO.output (22, False)
 GPIO.output (18, False)
 
 # Initialise K0-K3 inputs of the encoder to 0000
-GPIO.output (11, False)
-GPIO.output (15, False)
-GPIO.output (16, False)
-GPIO.output (13, False)
+GPIO.output(11, False)
+GPIO.output(15, False)
+GPIO.output(16, False)
+GPIO.output(13, False)
 
 # The On/Off code pairs correspond to the hand controller codes.
 # True = '1', False ='0'
@@ -81,55 +81,55 @@ try:
 		raw_input('hit return key to send socket 1 ON code')
 		# Set K0-K3
 		print "sending code 1111 socket 1 on"
-		GPIO.output (11, True)
-		GPIO.output (15, True)
-		GPIO.output (16, True)
-		GPIO.output (13, True)
+		GPIO.output(11, True)
+		GPIO.output(15, True)
+		GPIO.output(16, True)
+		GPIO.output(13, True)
 		# let it settle, encoder requires this
-		time.sleep(0.1)	
+		time.sleep(0.1)
 		# Enable the modulator
-		GPIO.output (22, True)
+		GPIO.output(22, True)
 		# keep enabled for a period
 		time.sleep(0.25)
 		# Disable the modulator
-		GPIO.output (22, False)
+		GPIO.output(22, False)
 
 		raw_input('hit return key to send socket 1 OFF code')
 		# Set K0-K3
 		print "sending code 0111 Socket 1 off"
-		GPIO.output (11, True)
-		GPIO.output (15, True)
-		GPIO.output (16, True)
-		GPIO.output (13, False)
+		GPIO.output(11, True)
+		GPIO.output(15, True)
+		GPIO.output(16, True)
+		GPIO.output(13, False)
 		# let it settle, encoder requires this
 		time.sleep(0.1)
 		# Enable the modulator
-		GPIO.output (22, True)
+		GPIO.output(22, True)
 		# keep enabled for a period
 		time.sleep(0.25)
 		# Disable the modulator
-		GPIO.output (22, False)
+		GPIO.output(22, False)
 
 		raw_input('hit return key to send socket 2 ON code')
 		# Set K0-K3
 		print "sending code 1110 socket 2 on"
-		GPIO.output (11, False)
-		GPIO.output (15, True)
-		GPIO.output (16, True)
-		GPIO.output (13, True)
+		GPIO.output(11, False)
+		GPIO.output(15, True)
+		GPIO.output(16, True)
+		GPIO.output(13, True)
 		# let it settle, encoder requires this
 		time.sleep(0.1)
 		# Enable the modulator
-		GPIO.output (22, True)
+		GPIO.output(22, True)
 		# keep enabled for a period
 		time.sleep(0.25)
 		# Disable the modulator
-		GPIO.output (22, False)
+		GPIO.output(22, False)
 
 		raw_input('hit return key to send socket 2 OFF code')
 		# Set K0-K3
 		print "sending code 0110 socket 2 off"
-		GPIO.output (11, False)
+		GPIO.output(11, False)
 		GPIO.output (15, True)
 		GPIO.output (16, True)
 		GPIO.output (13, False)
@@ -231,7 +231,7 @@ try:
 		GPIO.output (16, False)
 		GPIO.output (13, False)
 		# let it settle, encoder requires this
-		time.sleep(0.1)	
+		time.sleep(0.1)
 		# Enable the modulator
 		GPIO.output (22, True)
 		# keep enabled for a period
