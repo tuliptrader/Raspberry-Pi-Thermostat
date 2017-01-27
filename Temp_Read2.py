@@ -1,8 +1,13 @@
 #Read the temperature from a DS18B20 Thermometer
 
-from w1thermsensor.w1thermsensor import W1ThermSensor
+#from w1thermsensor.w1thermsensor import W1ThermSensor
 
-sensor = W1ThermSensor(W1ThermSensor.THERM_SENSOR_DS18B20, "0416606a3cff")
-temperature_in_celsius = sensor.get_temperature()
+#import re
 
-print temperature_in_celsius
+#sensor = W1ThermSensor(W1ThermSensor.THERM_SENSOR_DS18B20, "0416606a3cff")
+#temperature_in_celsius = sensor.get_temperature()
+
+
+Temperature_Data = open("/sys/bus/w1/devices/28-0416606a3cff/w1_slave","r")
+
+print str(Temperature_Data)
