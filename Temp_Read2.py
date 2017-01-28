@@ -13,9 +13,9 @@ with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
     p=re.compile("t=(.....*)")
     print p.search(Temperature_Data)
 
-    t = int(Temperature_Data[-6:])
+    t = Temperature_Data[-6:]
 
-    Celsius = t / 1000
+    Celsius = int(t) / 1000
 
     print Celsius "is the temperature in Celsius"
 
