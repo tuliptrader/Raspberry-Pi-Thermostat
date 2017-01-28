@@ -11,10 +11,7 @@ with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
 
     print(str(Living_Room) + "Celsius")
 
-
-    datafile = open("/home/pi/Python_Stuff/Raspberry-Pi-Thermostat/Data.csv", "a")
-
-
+    datafile = open("/home/pi/Python_Stuff/Thermostat_Data/Data.csv", "a")
 
     info_now = str(datetime.now()) + "; " + str(Living_Room) + "\n"
     datafile.write(info_now)
