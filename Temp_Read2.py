@@ -11,6 +11,6 @@
 #Temperature_Data = open("/sys/bus/w1/devices/28-0416606a3cff/w1_slave","r")
 
 with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
-Temperature_Data = content_file.read()
-print str(Temperature_Data)
-print Temperature_Data
+    Temperature_Data = content_file.read()
+    print str(Temperature_Data)
+    print Temperature_Data
