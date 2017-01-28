@@ -10,10 +10,10 @@ import re
 with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
     Temperature_Data = content_file.read()
 
-    p=re.compile("t=(.....)")
+    p=re.compile("t=(.....*)")
     print p.search(Temperature_Data)
 
-
+    #_.group(1)
 
 
 
