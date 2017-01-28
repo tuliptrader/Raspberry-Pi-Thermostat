@@ -17,7 +17,7 @@ with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
 
     Celsius = int(t) / 1000
 
-    print Celsius "is the temperature in Celsius"
+    print Celsius + "is the temperature in Celsius"
 
 
 
