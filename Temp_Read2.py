@@ -9,6 +9,3 @@ with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
     Living_Room = float(variable) / 1000
 
     print Living_Room
-    return Living_Room
-
-return Living_Room
