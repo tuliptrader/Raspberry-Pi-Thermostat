@@ -10,7 +10,7 @@
 #
  ##   print Living_Room
 
-open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
+content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
 
 Temperature_Data = content_file.read()
 print   Temperature_Data
