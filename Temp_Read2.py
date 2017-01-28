@@ -15,7 +15,7 @@ with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
 
     t = Temperature_Data[-6:]
 
-    Celsius = int(t) / 1000
+    Celsius = float(t) / 1000
 
     print Celsius
 
