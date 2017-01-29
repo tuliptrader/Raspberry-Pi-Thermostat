@@ -29,5 +29,6 @@ def Ten_Minute_Average2():
 
     return  temp_last_ten
     print temp_last_ten
+    file_x.close()
 
 Ten_Minute_Average2()
