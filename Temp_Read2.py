@@ -13,7 +13,7 @@ with open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r') as content_file:
 
     datafile = open("/home/pi/Python_Stuff/Thermostat_Data/Data.csv", "a")
 
-    info_now = str(datetime.now()) + "; " + str(Living_Room) #+ "\n"
+    info_now = str(datetime.now()) + "; " + str(Living_Room) + "\n"
 
     datafile.write(info_now)
 
