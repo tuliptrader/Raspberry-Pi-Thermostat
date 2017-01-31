@@ -5,7 +5,7 @@ def Heat_or_no_heat():
     if Ten_Minute_Average2() < 16: #Turn on socket
         energenie_socket(1,True)
 
-    elif Ten_Minute_Average2() <= 16: #Turn off socket
+    elif Ten_Minute_Average2() >= 16: #Turn off socket
         energenie_socket(1,False)
 
 
