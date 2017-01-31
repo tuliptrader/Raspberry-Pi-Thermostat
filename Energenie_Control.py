@@ -131,7 +131,7 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             GPIO.output (22, False)
 
 	elif socket == 4:
-            if state == True:
+        if state == True:
             # Set K0-K3
             #print "sending code 1100 socket 4 on"
             # GPIO.output (11, False)
