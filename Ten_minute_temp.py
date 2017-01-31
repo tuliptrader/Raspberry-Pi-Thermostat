@@ -28,7 +28,7 @@ def Ten_Minute_Average2():
     temp_last_ten = float(total) /10
 
 
-    print temp_last_ten
+    #print temp_last_ten
     file_x.close()
     return temp_last_ten
 
