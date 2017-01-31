@@ -134,9 +134,9 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             if state == True:
             # Set K0-K3
             #print "sending code 1100 socket 4 on"
-            GPIO.output (11, False)
-            GPIO.output (15, False)
-            GPIO.output (16, True)
+            # GPIO.output (11, False)
+            # GPIO.output (15, False)
+            # GPIO.output (16, True)
             GPIO.output (13, True)
             # let it settle, encoder requires this
             time.sleep(0.1)
