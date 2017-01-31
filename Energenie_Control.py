@@ -143,9 +143,9 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             # Enable the modulator
             GPIO.output (22, True)
             # keep enabled for a period
-            time.sleep(0.25)
-            # Disable the modulator
-            GPIO.output (22, False)
+            # time.sleep(0.25)
+            #  Disable the modulator
+            # GPIO.output (22, False)
 
         elif state == False:
             # Set K0-K3
