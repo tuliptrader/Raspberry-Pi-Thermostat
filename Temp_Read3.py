@@ -4,7 +4,7 @@ import re
 
 content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
 
-Temperature_Data = re.findall("[t=].....", content_file)
+Temperature_Data = re.findall("[t=]\d\d\d\d\d", content_file)
 
 Living_Room = float(Temperature_Data) / 1000
 
