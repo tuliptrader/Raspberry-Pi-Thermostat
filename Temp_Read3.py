@@ -8,7 +8,7 @@ Temperature_Data = re.findall("[t=].....", content_file)
 
 Living_Room = float(Temperature_Data) / 1000
 
-print(str(Living_Room) + "Celsius")
+print(str(Living_Room) + "Celsius using RegEx")
 
 datafile = open("/home/pi/Python_Stuff/Thermostat_Data/Data3.csv", "a")
 
