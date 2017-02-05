@@ -4,7 +4,9 @@ import re
 
 content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
 
-Temperature_Data = re.findall("t=.....", content_file)
+Temperature_Data = re.search("(?<=t=).....", content_file)
+
+#re.search('(?<=-)\w+', 'spam-egg')
 
 Living_Room = float(Temperature_Data) / 1000
 
