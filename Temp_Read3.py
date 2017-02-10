@@ -4,6 +4,8 @@ import re
 
 content_file = str(open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'))
 
+print content_file
+
 Temperature_Data = re.search('t=(.+?)', content_file)
 
 print Temperature_Data
