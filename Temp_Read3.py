@@ -2,7 +2,7 @@
 from datetime import datetime
 import re
 
-content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
+content_file = str(open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'))
 
 Temperature_Data = re.search('t=(.+?)', content_file)
 
