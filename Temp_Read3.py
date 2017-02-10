@@ -5,11 +5,11 @@ import re
 content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
 
 print content_file.read()
-Data_string = content_file.read()
+Data_string = str(content_file.read())
 
 Temperature_Data = re.search('t=(.+?)', Data_string)
 
-print Temperature_Data
+print str(Temperature_Data)
 # re.search('(?<=-)\w+', 'spam-egg')
 
 Living_Room = float(Temperature_Data) / 1000
