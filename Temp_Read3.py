@@ -6,7 +6,7 @@ content_file = str(open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'))
 
 Temperature_Data = re.search('t=(.+?)', content_file)
 
-print Temperature_Data.group(0)
+print Temperature_Data
 # re.search('(?<=-)\w+', 'spam-egg')
 
 Living_Room = float(Temperature_Data) / 1000
