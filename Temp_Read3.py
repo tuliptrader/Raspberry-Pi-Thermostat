@@ -4,9 +4,7 @@ import re
 
 content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
 
-x = str(content_file)
-
-print x
+print content_file.read()
 
 Temperature_Data = re.search('t=(.+?)', content_file)
 
