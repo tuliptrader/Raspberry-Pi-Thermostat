@@ -13,6 +13,7 @@ print str(Data_string)
 for i in content_file:
 
 	Temperature_Data = re.findall('t=\d\d\d\d\d', i)
+	print Temperature_Data
 
 print Temperature_Data
 # re.search('(?<=-)\w+', 'spam-egg')
