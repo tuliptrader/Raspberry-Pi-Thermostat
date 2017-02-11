@@ -10,9 +10,11 @@ Data_string = str(content_file.read())
 
 print str(Data_string)
 
-Temperature_Data = re.findall('t=(.+?)', content_file)
+for i in content_file:
 
-print str(Temperature_Data)
+	Temperature_Data = re.findall('t=(.+?)', i)
+
+print Temperature_Data
 # re.search('(?<=-)\w+', 'spam-egg')
 
 Living_Room = float(Temperature_Data) / 1000
