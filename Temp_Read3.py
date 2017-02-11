@@ -2,9 +2,11 @@
 from datetime import datetime
 import re
 
-content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
+for line in open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'):
+	Temperature_Data = re.findall("t=\d{5}", line)
 
-print content_file.read()
+print Temperature_Data
+"""print content_file.read()
 
 Data_string = content_file.read()
 
@@ -16,7 +18,7 @@ for i in Data_string:
 	print Temperature_Data
 
 print Temperature_Data
-# re.search('(?<=-)\w+', 'spam-egg')
+# re.search('(?<=-)\w+', 'spam-egg')"""
 
 Living_Room = float(Temperature_Data) / 1000
 
