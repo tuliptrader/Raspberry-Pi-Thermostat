@@ -10,7 +10,7 @@ Data_string = str(content_file.read())
 
 print Data_string
 
-Temperature_Data = re.search('t=(.+?)', Data_string)
+Temperature_Data = re.findall('t=(.+?)', Data_string)
 
 print str(Temperature_Data)
 # re.search('(?<=-)\w+', 'spam-egg')
