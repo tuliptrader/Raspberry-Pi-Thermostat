@@ -6,9 +6,9 @@ content_file = open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r')
 
 print content_file.read()
 
-Data_string = str(content_file.read())
+Data_string = content_file.read()
 
-print Data_string
+print str(Data_string)
 
 Temperature_Data = re.findall('t=(.+?)', Data_string)
 
