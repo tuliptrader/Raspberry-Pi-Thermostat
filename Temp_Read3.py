@@ -12,7 +12,7 @@ print Data_string
 
 for i in Data_string:
 
-	Temperature_Data = re.findall('t=\d\d\d\d\d', i)
+	Temperature_Data = re.findall("t=\d{5}", i)
 	print Temperature_Data
 
 print Temperature_Data
