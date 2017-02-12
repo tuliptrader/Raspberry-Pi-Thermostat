@@ -7,7 +7,7 @@ for line in open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'):
 
 print(Temperature_Data)
 
-Living_Room = float(str(Temperature_Data)[2:6])/1000
+Living_Room = float(str(Temperature_Data)[2:7])/1000
 
 print Living_Room
 
