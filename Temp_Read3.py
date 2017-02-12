@@ -7,7 +7,7 @@ for line in open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'):
 
 print Temperature_Data[4:8]
 print str(Temperature_Data)[4:8]
-print int(Temperature_Data)
+print int(str(Temperature_Data)[4:8])
 
 """print content_file.read()
 
