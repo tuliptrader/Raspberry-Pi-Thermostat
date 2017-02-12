@@ -15,7 +15,7 @@ Living_Room = float(str(Temperature_Data)[2:7])/1000 #convert the last five digi
 
 #print(str(Living_Room) + " Celsius using RegEx")
 
-datafile = open("/home/pi/Python_Stuff/Thermostat_Data/Data3.csv", "a")
+datafile = open("/home/pi/Python_Stuff/Thermostat_Data/Data.csv", "a")
 
 info_now = str(datetime.now()) + "; " + str(Living_Room) + "\n"
 
