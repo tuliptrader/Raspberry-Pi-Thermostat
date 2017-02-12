@@ -5,7 +5,9 @@ import re
 for line in open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'):
 	Temperature_Data = re.findall("\d{5}", line)
 
-Living_Room = float(str(Temperature_Data)[1:6])/1000
+print(Temperature_Data)
+
+Living_Room = float(str(Temperature_Data)[2:6])/1000
 
 print Living_Room
 
