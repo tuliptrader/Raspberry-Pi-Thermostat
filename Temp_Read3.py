@@ -5,15 +5,15 @@ import re
 for line in open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'):
 	Temperature_Data = re.findall("\d{5}", line)
 
-print(Temperature_Data)
+#print(Temperature_Data)
 
-Living_Room = float(str(Temperature_Data)[2:7])/1000
+Living_Room = float(str(Temperature_Data)[2:7])/1000 #convert the last five digits of the thermometer file to a floating temperature point
 
-print Living_Room
+#print Living_Room
 
 #Living_Room = float(Temperature_Data) / 1000
 
-print(str(Living_Room) + " Celsius using RegEx")
+#print(str(Living_Room) + " Celsius using RegEx")
 
 datafile = open("/home/pi/Python_Stuff/Thermostat_Data/Data3.csv", "a")
 
