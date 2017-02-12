@@ -5,9 +5,8 @@ import re
 for line in open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'):
 	Temperature_Data = re.findall("t=\d{5}", line)
 
-print Temperature_Data[4:8]
-print str(Temperature_Data)[4:8]
-print int(str(Temperature_Data)[4:8])
+Living_Room = int(str(Temperature_Data)[4:8])/1000
+print Living_Room
 
 """print content_file.read()
 
@@ -23,7 +22,7 @@ for i in Data_string:
 print Temperature_Data
 # re.search('(?<=-)\w+', 'spam-egg')"""
 
-Living_Room = float(Temperature_Data) / 1000
+#Living_Room = float(Temperature_Data) / 1000
 
 print(str(Living_Room) + "Celsius using RegEx")
 
