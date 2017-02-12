@@ -6,7 +6,8 @@ for line in open('/sys/bus/w1/devices/28-0416606a3cff/w1_slave', 'r'):
 	Temperature_Data = re.findall("t=\d{5}", line)
 
 print Temperature_Data
-print str(Temperature_Data)[3:]
+print str(Temperature_Data)[4:]
+print int(Temperature_Data)
 """print content_file.read()
 
 Data_string = content_file.read()
