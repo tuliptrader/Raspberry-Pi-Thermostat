@@ -26,3 +26,6 @@ def Target_temperature():
 	Target = Info[-4:-2]
 
 	return Target
+	print Target
+
+Target_temperature()
