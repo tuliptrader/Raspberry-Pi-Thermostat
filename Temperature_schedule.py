@@ -28,4 +28,4 @@ def Target_temperature():
 	return Target
 	print Target
 
-Target_temperature()
+print Target_temperature()
