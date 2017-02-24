@@ -3,13 +3,14 @@ from Energenie_Control import energenie_socket
 from Temperature_schedule import Target_temperature
 import RPi.GPIO as GPIO
 
-
+print "I am printing from the impoort in Simple_Thermostat"
 def Thermostat():
     Target = Target_temperature()
 
     if Ten_Minute_Average2() < Target: #Turn on socket
-        #GPIO.cleanup()
+        GPIO.cleanup()
         energenie_socket(1,True)
+        print "I am printing from the decision thing"
 
     else: #Ten_Minute_Average2() >= Target: #Turn off socket
         #GPIO.cleanup()
