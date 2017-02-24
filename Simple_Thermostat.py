@@ -8,7 +8,7 @@ def Thermostat():
     Target = Target_temperature()
 
     if Ten_Minute_Average2() < Target: #Turn on socket
-        GPIO.cleanup()
+        #GPIO.cleanup()
         energenie_socket(1,True)
         print "I am printing from the decision thing"
 
