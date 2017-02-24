@@ -11,7 +11,7 @@ def Thermostat():
         #GPIO.cleanup()
         energenie_socket(1,True)
 
-    elif Ten_Minute_Average2() >= Target: #Turn off socket
+    else: #Ten_Minute_Average2() >= Target: #Turn off socket
         #GPIO.cleanup()
         energenie_socket(1,False)
 
