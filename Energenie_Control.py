@@ -202,5 +202,5 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
 
     GPIO.cleanup()
     # Clean up the GPIOs for next time
-    except KeyboardInterrupt:
-        GPIO.cleanup()
+    """except KeyboardInterrupt:
+        GPIO.cleanup()"""
