@@ -20,4 +20,3 @@ def Thermostat():
 
 
 Thermostat()
-GPIO.cleanup()
