@@ -5,6 +5,7 @@ import RPi.GPIO as GPIO
 import time
 print "I am running!!!! in Energenie_Control"
 # set the pins numbering mode
+GPIO.cleanup()
 GPIO.setmode(GPIO.BOARD)
 
 # Select the GPIO pins used for the encoder K0-K3 data inputs
