@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 import time
 print "I am running!!!! in Energenie_Control"
 # set the pins numbering mode
-GPIO.cleanup()
+
 GPIO.setmode(GPIO.BOARD)
 
 # Select the GPIO pins used for the encoder K0-K3 data inputs
@@ -198,7 +198,9 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             time.sleep(0.25)
             # Disable the modulator
             GPIO.output (22, False)
+    """
 
-# Clean up the GPIOs for next time
-except KeyboardInterrupt:
-    GPIO.cleanup()"""
+    GPIO.cleanup()
+    # Clean up the GPIOs for next time
+    except KeyboardInterrupt:
+        GPIO.cleanup()
