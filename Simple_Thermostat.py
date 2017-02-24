@@ -10,13 +10,14 @@ def Thermostat():
     if Ten_Minute_Average2() < Target: #Turn on socket
 
         energenie_socket(1,True)
-        GPIO.cleanup()
+        #GPIO.cleanup()
         print "I am printing from the decision thing"
 
     else: #Ten_Minute_Average2() >= Target: #Turn off socket
 
         energenie_socket(1,False)
-        GPIO.cleanup()
+        #GPIO.cleanup()
 
 
 Thermostat()
+GPIO.cleanup()
