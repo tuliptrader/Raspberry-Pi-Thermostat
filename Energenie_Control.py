@@ -3,7 +3,7 @@
 #import the required modules
 import RPi.GPIO as GPIO
 import time
-print "I am running!!!! in Energenie_Control"
+print "I am running!!!! in Energenie_Controll"
 # set the pins numbering mode
 
 GPIO.setmode(GPIO.BOARD)
