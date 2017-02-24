@@ -35,8 +35,6 @@ GPIO.output (13, False)
 def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, False)
 	# We will just loop round switching the units on and off
 
-    run
-
     if socket == 1:
         if state == True:
             # Set K0-K3
