@@ -22,12 +22,13 @@ def Target_temperature():
 		if my_str in line:
 			Info = line
 
-	#print Info
+	print Info
 
 	Target = Info[-3:-1]
 
-	#print Target
+	print Target
 	return Target
 
 
-#print Target_temperature()
+Target_temperature()
+
