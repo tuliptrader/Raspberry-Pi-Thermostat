@@ -16,7 +16,7 @@ def Target_temperature():
 	print my_str
 
 	#my_regex = the string that I will be searching for in the Schedule.csv file
-	myfile = open('Schedule_livingroom.csv','r')
+	myfile = open('/home/pi/Python_Stuff/Raspberry-Pi-Thermostat/Schedule_livingroom.csv','r')
 
 	for line in myfile:
 		if my_str in line:
