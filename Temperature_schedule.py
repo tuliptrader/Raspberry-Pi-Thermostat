@@ -13,13 +13,14 @@ def Target_temperature():
 
 	my_str =  str(The_weekday) + ',' + str(The_hour) +':' + str(The_minute)[0]
 	#my_str = "Monday,02:1"
-	#print my_str
+	print my_str
 
 	#my_regex = the string that I will be searching for in the Schedule.csv file
 	myfile = open('Schedule_livingroom.csv','r')
 
 	for line in myfile:
 		if my_str in line:
+			print line
 			Info = line
 
 	print Info
