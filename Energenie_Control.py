@@ -132,6 +132,8 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             # Disable the modulator
             GPIO.output (22, False)
 
+    GPIO.cleanup()
+
 	"""elif socket == 4:
         if state == True:
             GPIO.output(13, True)
