@@ -14,7 +14,6 @@ def Thermostat():
         print "I am printing from the decision thing"
 
     elif Ten_Minute_Average2() >= Target: #Turn off socket
-
         energenie_socket(1,False)
         #GPIO.cleanup()
 

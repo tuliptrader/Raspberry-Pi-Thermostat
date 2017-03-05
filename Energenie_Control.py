@@ -131,10 +131,9 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             time.sleep(0.25)
             # Disable the modulator
             GPIO.output (22, False)
-
     GPIO.cleanup()
-
-	"""elif socket == 4:
+"""""
+	elif socket == 4:
         if state == True:
             GPIO.output(13, True)
             # Set K0-K3
@@ -199,8 +198,9 @@ def energenie_socket(socket, state): # sockets (1,2,3,4,all) and state (True, Fa
             # keep enabled for a period
             time.sleep(0.25)
             # Disable the modulator
-            GPIO.output (22, False)"""
+            GPIO.output (22, False)
     GPIO.cleanup()
     # Clean up the GPIOs for next time
-    """except KeyboardInterrupt:
-        GPIO.cleanup()"""
+
+    except KeyboardInterrupt:
+        GPIO.cleanup()"""""
